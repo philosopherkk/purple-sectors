@@ -1,16 +1,11 @@
 # Purple Sectors
 
-Site files are on `main`: `index.html`, `data-series.js`, `data-tracks.js`, `data-app.js`.
+Live (separate from transit and outflow):
 
-The public URL stays 404 until GitHub Pages is turned on **once**:
+https://philosopherkk.github.io/purple/
 
-1. Open https://github.com/philosopherkk/purple-sectors/settings/pages
-2. Under **Build and deployment → Source** choose **Deploy from a branch**
-3. Branch: **main** / folder: **/ (root)**
-4. Save
+Source stays in this repo. The user site only hosts a folder so the three apps cannot overwrite one index.html.
 
-Wait 1–2 minutes, then open:
+Optional extra publish from this repo: Settings → Pages → Deploy from a branch → `main` / root
 
-https://philosopherkk.github.io/purple-sectors/
-
-Do not use GitHub Actions as the source unless you also accept the first Pages environment prompt — that is why the first workflow run failed.
+That would also serve https://philosopherkk.github.io/purple-sectors/
