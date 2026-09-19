@@ -4,7 +4,7 @@ Git-sourced history for this board. Entries follow commits on `main`, not chat n
 
 ## [1.0] — 2026-09-19
 
-- **Commit:** _(this PR — stamped after commit)_
+- **Commit:** `4bcc965` (`4bcc965082bf19440d6415110b65c68fcde5e858`)
 - **Summary:** Add CHANGELOG + VERSION + on-page history stamp (CONTENT_VERSION / CONTENT_UPDATED); document publish habit in AGENTS.md and README.
 - **Files:** `CHANGELOG.md`, `VERSION`, `index.html`, `data-app.js`, `AGENTS.md`, `README.md`
 
