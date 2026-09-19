@@ -18,11 +18,22 @@ That path is a **publish mirror** (folder copy under `philosopherkk/philosopherk
 3. After accepted writes: stage those files, commit on the feature/chore branch, push, open a PR.
 4. Do not force-push or amend published history.
 
+## Every content publish (required)
+
+After any schedule / track / board content change that should go live:
+
+1. **Commit** on `feat/*` or `chore/*` (never casually on `main`).
+2. **CHANGELOG.md** — add an entry from **that git commit** (short + full SHA, date, summary). History is git-sourced; never invent chat-only edits.
+3. **Bump version + date** — update `VERSION`, and `CONTENT_VERSION` / `CONTENT_UPDATED` in `data-app.js` (HKT `YYYY-MM-DD`). The on-page footer stamp must match.
+4. **After merge to `main`** — sync/copy app files into `philosopherkk.github.io` `purple/` via a PR there. Hard-refresh https://philosopherkk.github.io/purple/ and confirm the History strip matches.
+
+`CHANGELOG.md` entries come from **git**, not from chat.
+
 ## Publish path
 
-1. Edit and merge in **this** repo first.
+1. Edit and merge in **this** repo first (including CHANGELOG + version bump).
 2. After `main` has the change, sync/copy app files into `philosopherkk.github.io` `purple/` via a PR there (Pages bot / Cursor). KK merges the publish PR.
-3. Hard-refresh https://philosopherkk.github.io/purple/ to verify.
+3. Hard-refresh https://philosopherkk.github.io/purple/ to verify version stamp + History link.
 
 **Never** edit `philosopherkk.github.io` `/purple/` without also updating this repo first (or in the same change set). Mirror-only edits drift and die.
 
@@ -40,3 +51,4 @@ Chat-only edits that are not committed do not exist.
 - No silent “fix live” by editing only the github.io mirror.
 - No DNS / Pages / domain changes unless KK asks in that turn.
 - Never commit secrets, tokens, or keys.
+- Never invent schedule data; only official / repo-sourced weeks.
