@@ -18,9 +18,10 @@ Same habit as eyesinfo (branch → PR → publish), adapted for GitHub Pages ins
 
 1. New work on `feat/*` or `chore/*` — never commit on `main` casually.
 2. Edit files **in this repo**; commit; push the branch; open a PR.
-3. After merge to `main`, sync/copy the app files into `philosopherkk.github.io` `purple/` via a PR there (Pages bot / Cursor). KK merges that publish PR.
-4. Hard-refresh https://philosopherkk.github.io/purple/
-5. Chat-only edits that are not committed do not exist.
+3. On every content publish also: update [`CHANGELOG.md`](CHANGELOG.md) from **that commit’s SHA**, and bump [`VERSION`](VERSION) + `CONTENT_VERSION` / `CONTENT_UPDATED` in `data-app.js` (HKT date). The board footer shows the stamp and links to History.
+4. After merge to `main`, sync/copy the app files into `philosopherkk.github.io` `purple/` via a PR there (Pages bot / Cursor). KK merges that publish PR.
+5. Hard-refresh https://philosopherkk.github.io/purple/ and confirm the History strip.
+6. Chat-only edits that are not committed do not exist.
 
 Do not overwrite the hub root on `philosopherkk.github.io` — only the `purple/` folder is this app’s publish target.
 
@@ -29,9 +30,16 @@ Do not overwrite the hub root on `philosopherkk.github.io` — only the `purple/
 | What | File |
 |---|---|
 | Board UI shell | `index.html` |
-| App helpers / YouTube embeds map | `data-app.js` |
+| App helpers / YouTube embeds / version stamp | `data-app.js` |
 | Series / week schedules / cars | `data-series.js` |
 | Track dossiers / map coords | `data-tracks.js` |
+| Edit/upload history | `CHANGELOG.md` |
+| Version label (agents bump on publish) | `VERSION` |
+
+## History / version
+
+- On-page strip: `Purple · Season 4 · v… · updated YYYY-MM-DD HKT · History`
+- Full log: [CHANGELOG.md](https://github.com/philosopherkk/purple-sectors/blob/main/CHANGELOG.md) (git-sourced; commit SHAs from `main`, not chat)
 
 ## Optional: Pages from this repo
 
