@@ -79,7 +79,7 @@ const sel = document.getElementById('weekSelect');
 for(let w=1;w<=12;w++){
   const o=document.createElement('option');
   o.value=w;
-  o.textContent='S3 Week '+w+' · '+new Date(S3_START+(w-1)*7*86400000).toISOString().slice(0,10);
+  o.textContent='S4 Week '+w+' · '+new Date(S4_START+(w-1)*7*86400000).toISOString().slice(0,10);
   sel.appendChild(o);
 }
 function renderArchive(){
