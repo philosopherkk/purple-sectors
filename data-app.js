@@ -1,7 +1,7 @@
 /** Public content edition — bump on every publish (see VERSION + AGENTS.md). */
-const CONTENT_VERSION = '1.0';
+const CONTENT_VERSION = '1.0.1';
 /** Last content update date, Hong Kong time (YYYY-MM-DD). */
-const CONTENT_UPDATED = '2026-09-19';
+const CONTENT_UPDATED = '2026-11-24';
 const CHANGELOG_URL = 'https://github.com/philosopherkk/purple-sectors/blob/main/CHANGELOG.md';
 const COMMITS_URL = 'https://github.com/philosopherkk/purple-sectors/commits/main';
 
