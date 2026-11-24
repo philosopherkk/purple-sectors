@@ -2,6 +2,12 @@
 
 Git-sourced history for this board. Entries follow commits on `main`, not chat notes.
 
+## [1.0.1] — 2026-11-24
+
+- **Commit:** `ee1abd2` (`ee1abd2f531fd565c85ec5e2bdc0ac55008add00`)
+- **Summary:** Weekly check — swap IMSA Open and Fixed S4 weeks 11–12 to Sebring then Monza (corrects Sep 2026 PR #3 alignment).
+- **Files:** `data-series.js`, `data-app.js`, `VERSION`, `CHANGELOG.md`
+
 ## [1.0] — 2026-09-19
 
 - **Commit:** `4bcc965` (`4bcc965082bf19440d6415110b65c68fcde5e858`)
